@@ -1,0 +1,16 @@
+.card-container{
+    width:400px;
+    margin:15px;
+}
+h2{
+    text-align:center;
+}
+card-image{
+    width:70px;
+}
+
+card{
+    background-color:orange;
+    padding:15px;
+    border-radius:10px;
+}
