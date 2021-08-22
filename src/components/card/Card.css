@@ -1,16 +1,42 @@
 .card-container{
-    width:400px;
+    width:700px;
     margin:15px;
+    height: 1000px;
+    background-color: orange;
+    padding: 15px;
+    border-radius: 10px;
+
+  
+
+
 }
-h2{
-    text-align:center;
-}
-card-image{
-    width:70px;
+ .card-item{
+    margin: auto;
+    text-align: center;
+    background-color: #ffff;
+    border-radius: 15px;
+    width: 160px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s;
+    
+   
 }
 
-card{
-    background-color:orange;
-    padding:15px;
-    border-radius:10px;
+.card-header{
+    text-align:center;
+    font-size:1.2rem;
+}
+
+
+
+.card-image{
+    width:100px;
+}
+.card-title{
+    font-size:40px;
+    color: white;
 }

@@ -8,7 +8,7 @@
 
 #img {
   width: 15rem;
-  display: block;
-  margin: -10rem auto;
+  display: flex;
+  /* margin: -10rem auto; */
   text-align: center;
 }

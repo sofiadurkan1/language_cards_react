@@ -1,32 +1,32 @@
-import React,{useState} from 'react';
+import React, { useState } from "react";
 import "./Card.css";
-import {categories} from "../../helper/Data";
+// import { categories } from "../../helper/Data";
 
-function Card() {
-    const [flip,setFlip]= useState(true);
-    const onFlip =() => setFlip((flipped) => !flipped);
+function Card({options}) {
+  const [flip, setFlip] = useState(false);
 
-    
+  const onFlip = () => setFlip((flipped) => !flipped);
 
-    return (
-        <div className="card-container" >
-            <h2>Languages</h2>
-            {categories.map((card) => {
-                return(
-                    <div className="card"onClick={onFlip}>
-                        <img className="card-image" src={card.img} alt="" />
-                        <h5 className="card-title" >{card.name}</h5>
-                        
-                    </div>
-
-                    
-                )
-
-            })}
-          
-            
+  return (
+    <div className="card-item" onClick={onFlip}>
+      {!flip ? (
+        <div className={`card ${flip ? "flipped" : ""}`}>
+          <img className="card-image" src={options.img} alt="" />
+          <h5 className="card-title">{options.name}</h5>
         </div>
-    )
+      ) : (
+        <div className={`card ${flip ? "flipped" : ""}`}>
+          <ul>
+            <li>{options.options[0]}</li>
+            <li>{options.options[1]}</li>
+            <li>{options.options[2]}</li>
+          </ul>
+        </div>
+      )}
+      
+    </div>
+  )
+  
 }
 
-export default Card
+export default Card;
