@@ -1,42 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Rubik&display=swap');
+
 .card-container{
-    width:700px;
+    width:500px;
     margin:15px;
     height: 1000px;
     background-color: orange;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    grid-gap: 10px;
+
+    
+    
+
 
   
 
 
 }
- .card-item{
-    margin: auto;
+/* .card-item{
+
+ 
+
+} */
+
+
+ .front-flip{
+    margin: 20px;
     text-align: center;
     background-color: #ffff;
     border-radius: 15px;
-    width: 160px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: box-shadow 0.3s;
-    
+    padding:30px;  
    
 }
+
+.front-flip:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgb(44, 46, 218);
+}
+
+
 
 .card-header{
     text-align:center;
     font-size:1.2rem;
+    top:30px;
 }
 
 
 
 .card-image{
     width:100px;
+    position: relative;
+    margin: 20px;
+    top:60px;
 }
+
 .card-title{
-    font-size:40px;
-    color: white;
+    font-size:2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 3rem;
+    position:absolute;
+    margin-top: -300px;
+    
+    
+
+}
+
+
+.back-flip{
+ font-size: 18px;
+  font-size: bold;
+  text-align: left;
+  margin-left: 3px;
+  line-height: 30px;
+  overflow: hidden;
+
 }

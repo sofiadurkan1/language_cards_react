@@ -10,12 +10,12 @@ function Card({options}) {
   return (
     <div className="card-item" onClick={onFlip}>
       {!flip ? (
-        <div className={`card ${flip ? "flipped" : ""}`}>
+        <div className="front-flip">
           <img className="card-image" src={options.img} alt="" />
           <h5 className="card-title">{options.name}</h5>
         </div>
       ) : (
-        <div className={`card ${flip ? "flipped" : ""}`}>
+        <div className="back-flip">
           <ul>
             <li>{options.options[0]}</li>
             <li>{options.options[1]}</li>

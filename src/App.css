@@ -3,12 +3,18 @@
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+ 
+
  
 }
 
 #img {
-  width: 15rem;
+  width: 250px;
   display: flex;
-  /* margin: -10rem auto; */
-  text-align: center;
+  margin: -30rem auto;
+  margin-left: 0 auto;
+  
+  
 }
