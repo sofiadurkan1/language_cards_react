@@ -11,6 +11,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr;
     grid-gap: 10px;
+    overflow: hidden;
+    
 
     
     
@@ -20,11 +22,13 @@
 
 
 }
-/* .card-item{
+.card-item{
+  
+      }
 
  
 
-} */
+
 
 
  .front-flip{
@@ -46,6 +50,7 @@
 .front-flip:hover{
     cursor: pointer;
     box-shadow: 0 0 5px 5px rgb(44, 46, 218);
+   
 }
 
 
@@ -59,10 +64,15 @@
 
 
 .card-image{
-    width:100px;
-    position: relative;
-    margin: 20px;
-    top:60px;
+    width: 70px;
+    height: 50px;
+    margin: auto;
+}
+.card-image:hover{
+    width: 10px;
+    height: 100px;
+
+
 }
 
 .card-title{
@@ -74,8 +84,10 @@
 
 h2{
     font-size: 3rem;
-    position:absolute;
     margin-top: -300px;
+    position: relative;
+     padding-top:-100px;
+    left: 10px;
     
     
 
