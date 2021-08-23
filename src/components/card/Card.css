@@ -1,87 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Rubik&display=swap");
 
-.card-container{
-    width:500px;
-    margin:15px;
-    height: 1000px;
-    background-color: orange;
-    padding: 20px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4fr;
-    grid-gap: 10px;
-    overflow: hidden;
-    
-
-    
-    
-
-
-  
-
-
-}
-.card-item{
-  
-      }
-
- 
-
-
-
-
- .front-flip{
-    margin: 20px;
-    text-align: center;
-    background-color: #ffff;
-    border-radius: 15px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: box-shadow 0.3s;
-    padding:30px;  
-   
+.card-container {
+  width: 500px;
+  margin: 15px;
+  height: 1000px;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr;
+  grid-gap: 10px;
+  overflow: hidden;
 }
 
-.front-flip:hover{
-    cursor: pointer;
-    box-shadow: 0 0 5px 5px rgb(44, 46, 218);
-   
+.front-flip {
+  margin: 20px;
+  text-align: center;
+  background-color: #ffff;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  padding: 30px;
 }
 
-
-
-.card-header{
-    text-align:center;
-    font-size:1.2rem;
-    top:30px;
+.front-flip:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 5px rgb(44, 46, 218);
 }
 
-
-
-.card-image{
-    width: 70px;
-    height: 50px;
-    margin: auto;
-}
-.card-image:hover{
-    width: 10px;
-    height: 100px;
-
-
+.card-header {
+  text-align: center;
+  font-size: 1.2rem;
+  top: 30px;
 }
 
-.card-title{
-    font-size:2rem;
-    color: black;
-    text-align: center;
-    margin-bottom: 30px;
+.card-image {
+  width: 70px;
+  height: 50px;
+  margin: auto;
+}
+.card-image:hover {
+  width: 100px;
+  height: 100px;
 }
 
+.card-title {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* 
 h2{
     font-size: 3rem;
     margin-top: -300px;
@@ -91,15 +66,13 @@ h2{
     
     
 
-}
+} */
 
-
-.back-flip{
- font-size: 18px;
+.back-flip {
+  font-size: 18px;
   font-size: bold;
   text-align: left;
   margin-left: 3px;
   line-height: 30px;
   overflow: hidden;
-
 }

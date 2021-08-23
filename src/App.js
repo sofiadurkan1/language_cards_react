@@ -7,13 +7,16 @@ import { categories } from "./helper/Data";
 
 function App() {
   return (
+   
     <div className="App">
+       <div className="header">
       <ReactLogo id="img"/>
       <div className="card-container">
       {categories.map((card) => (
          <Card options = {card}/>
 
       ))}
+      </div>
       </div>
      
 
